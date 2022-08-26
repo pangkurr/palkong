@@ -20,53 +20,58 @@
   <body>
     <!-- 맨 상단 topBar -->
     <nav class="topBar">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Map</a></li>
-      </ul>
-      <ul>
-        <li>
-          <a href="#"><i class="fa fab fa-twitter"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa fab fab fa-facebook-square"></i></a>
-        </li>
-        <li>
-          <a href="#"><i class="fa fab fa-instagram"></i></a>
-        </li>
-      </ul>
+      <div class="inner clearfix">
+        <a href="index.html"><span>HOME</span></a>
+        <ul>
+          <li>
+            <a href="#"><i class="fa fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fab fab fa-facebook-square"></i></a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- Header -->
     <header>
-      <!-- logo 절대 위치 -->
-      <div class="logo">
-        <a href="#"><img src="img/logo.png" alt="Dog's Home" /></a>
-      </div>
+      <div class="inner">
+        <!-- logo 절대 위치 -->
+        <div class="logo">
+          <a href="#"><img src="img/logo.png" alt="Dog's Home" /></a>
+        </div>
 
-      <!-- 네이버를 검색도구로 -->
-      <div class="search_box">
-        <form
-          name="sform"
-          action="https://search.naver.com/search.naver"
-          method="get"
-        >
-          <input name="query" type="text" />
-          <input type="submit" value="검색" />
-        </form>
+        <!-- 네이버를 검색도구로 -->
+        <div class="search_box">
+          <form
+            name="sform"
+            action="https://search.naver.com/search.naver"
+            method="get"
+          >
+            <input name="query" type="text" />
+            <button type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
       </div>
-
-      <!-- 네비게이션 메인메뉴 -->
-      <ul class="gnb">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Pets</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Event</a></li>
-      </ul>
     </header>
-
+    <nav class="main_menu">
+      <div class="inner">
+        <!-- 네비게이션 메인메뉴 -->
+        <ul class="gnb">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Pets</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Event</a></li>
+        </ul>
+      </div>
+    </nav>
     <!-- 배너 호출 -->
     <section class="main_banner">
       <div class="inner">
@@ -112,7 +117,6 @@
         </ul>
       </div>
     </section>
-    <hr />
 
     <!-- 펫 이름 -->
     <section class="pets">
