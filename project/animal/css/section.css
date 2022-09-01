@@ -1,3 +1,5 @@
+@import url(../css/keyframe.css);
+
 /* 배너 */
 .main_banner {
   width: 100%;
@@ -47,7 +49,11 @@
 /* 애완용품 코너 */
 .shopping {
   width: 100%;
+  margin-top:50px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   height: auto;
+  background-color: antiquewhite;
 }
 
 .shopping .inner {
@@ -58,6 +64,7 @@
 .shopping h2 {
   text-align: center;
   font-size: 2.5rem;
+  text-shadow:2px 5px 5px rgba(137, 137, 137, 0.9);
 }
 
 .shopping ul {
@@ -71,6 +78,11 @@
   width: 200px;
   height: 200px;
 }
+.shopping img:hover{
+  animation-name:pulse;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+}
 
 .shopping p {
   cursor: pointer;
@@ -78,6 +90,10 @@
   font-size: 1.25rem;
   font-weight: bold;
   margin-top: 8px;
+  text-shadow:
+  1px 2px 5px rgba(242, 24, 24, 0.8),
+  1px 2px 5px rgba(242, 166, 24, 0.7),
+  1px 2px 5px rgba(219, 227, 107, 0.7);
 }
 
 
@@ -87,18 +103,20 @@
   height: auto;
   padding-top: 50px;
   padding-bottom: 50px;
+  border-bottom:1px solid black;
 }
 
 .pets h2 {
   text-align: center;
   font-size: 2.5rem;
+  text-shadow:2px 5px 5px rgba(137, 137, 137, 0.9);
 }
 
 .pets .petList {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 .pets .petList li {
@@ -108,18 +126,117 @@
 
 /* hover 효과 */
 .pets .petList li:nth-child(1):hover::before {
-  content: '불독';
-  background-color: #777;
+  content:'불독';
+  background-color: #999;
   position: absolute;
   width: 100%;
   height: 100%;
-  opacity: 0.7;
-  color: blue;
+  opacity: 0.8;
   font-size: 50px;
   text-align: center;
   line-height: 200px;
+  color: skyblue;
+  animation: shake 0.8s;
+  animation-iteration-count: 3;
 }
-
+.pets .petList li:nth-child(2):hover::before {
+  content:'시바';
+  background-color: #999;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  font-size: 50px;
+  text-align: center;
+  line-height: 200px;
+  color: greenyellow;
+  animation: shake 0.8s;
+  animation-iteration-count: 3;
+}
+.pets .petList li:nth-child(3):hover::before {
+  content:'치와와';
+  background-color: pink;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  font-size: 50px;
+  text-align: center;
+  line-height: 200px;
+  color: black;
+  animation: shake 0.8s;
+  animation-iteration-count: 3;
+}
+.pets .petList li:nth-child(4):hover::before {
+  content:'시바';
+  background-color: #999;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  font-size: 50px;
+  text-align: center;
+  line-height: 200px;
+  color: greenyellow;
+  animation: shake 0.8s;
+  animation-iteration-count: 3;
+}
+.pets .petList li:nth-child(5):hover::before {
+  content:'리트리버';
+  background-color: green;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  font-size: 50px;
+  text-align: center;
+  line-height: 200px;
+  color: yellow;
+  animation: shake 0.8s;
+  animation-iteration-count: 3;
+}
+.pets .petList li:nth-child(6):hover::before {
+  content:'시바';
+  background-color: #999;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  font-size: 50px;
+  text-align: center;
+  line-height: 200px;
+  color: greenyellow;
+  animation: shake 0.8s;
+  animation-iteration-count: 3;
+}
+.pets .petList li:nth-child(7):hover::before {
+  content:'포메리안';
+  background-color: bisque;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  font-size: 50px;
+  text-align: center;
+  line-height: 200px;
+  color: orange;
+  animation: shake 0.8s;
+  animation-iteration-count: 3;
+}
+.pets .petList li:nth-child(8):hover::before {
+  content:'시바';
+  background-color: #999;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  font-size: 50px;
+  text-align: center;
+  line-height: 200px;
+  color: greenyellow;
+  animation: shake 0.8s;
+  animation-iteration-count: 3;
+}
 .pets img {
   width: 200px;
   height: 200px;
@@ -142,6 +259,7 @@
 .uTube h2 {
   text-align: center;
   font-size: 2.5rem;
+  text-shadow:2px 5px 5px rgba(137, 137, 137, 0.9);
 }
 
 .uTube iframe {
